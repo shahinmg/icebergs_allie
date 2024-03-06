@@ -1,0 +1,8 @@
+name: qgis
+channels:
+  - conda-forge
+dependencies:
+  - qgis
+  - libgdal-arrow-parquet
+
+  
