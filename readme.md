@@ -19,7 +19,31 @@ Note: Be patient. These may take some time
 conda env create --file qgis_environment.yml
 ```
 
+to run the new qgis install first activate the environment
+
+```
+conda activate qgis
+```
+
+then run the qgis command
+```
+qgis
+```
+
 ## Create geopandas environment
+Now we need to make a seperate environment to work with the data in python. Run the command below to creat the new environment 
+
 ```
 conda env create --file icebergs.yml
 ```
+
+```
+conda activate icebergs
+```
+
+
+
+## Visualize the data
+
+Since the data is quite large, we should use the library [polars](https://docs.pola.rs/). We will use the `scan_parquet` method to read our data, use grouby to sort the data by date and then take the sum of the area. Use the `parquet_plot.py` to make the figure in the `figs` directory.
+

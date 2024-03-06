@@ -3,6 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - python=3.11
+  - spyder
   - gdal
   - geopandas
   - numpy
@@ -10,3 +11,4 @@ dependencies:
   - fastparquet
   - pyarrow
   - pyogrio
+  - polars
