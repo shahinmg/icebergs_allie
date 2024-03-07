@@ -45,5 +45,5 @@ conda activate icebergs
 
 ## Visualize the data
 
-Since the data is quite large, we should use the library [polars](https://docs.pola.rs/). We will use the `scan_parquet` method to read our data, use grouby to sort the data by date and then take the sum of the area. Use the `polars_plot.py` to make the figure in the `figs` directory.
+Since the data is quite large, we should use the library [polars](https://docs.pola.rs/). We will use the `scan_parquet` method to read our data, use grouby to sort the data by date and then take the sum of the area. Use the `polars_plot.py` to make the figure in the `figs` directory. Place the parquet files in the `geo_parquets` directory to run the script.
 
