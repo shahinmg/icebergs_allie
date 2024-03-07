@@ -2,13 +2,13 @@ name: icebergs
 channels:
   - conda-forge
 dependencies:
-  - python=3.11
+  - python=3.10
   - spyder
   - gdal
   - geopandas
-  - numpy
-- pip:
-  - fastparquet
-  - pyarrow
-  - pyogrio
-  - polars
+  - pip
+  - pip:
+    - polars
+    - fastparquet
+    - pyarrow
+    - pyogrio
