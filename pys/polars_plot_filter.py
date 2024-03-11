@@ -45,6 +45,6 @@ for file in file_list:
 ax.legend(labels)
 ax.set_ylabel('iceberg count')
 ax.grid(linestyle='--')
-ax.set_title('Number of icebergs >= {filter_size}')
+ax.set_title(f'Number of icebergs >= {filter_size}')
 
 plt.savefig(f'../figs/icebergs_gte_{filter_size}',dpi=300)
